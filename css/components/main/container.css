@@ -1,0 +1,25 @@
+.container {
+    position: relative;
+    display: block;
+    overflow-x: hidden;
+    /* padding: var(--default-pd); */
+    border: 1px solid var(--gray-200);
+    border-radius: 10px;
+}
+.container > section {
+    display: inline-flex;
+    flex-direction: column;
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    padding: var(--default-pd);
+    overflow-y: auto;
+}
+.container > section:not([class="active"]){
+    left: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .container { border: unset; }
+}

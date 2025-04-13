@@ -1,0 +1,46 @@
+/* UI */
+@import "./ui/icons.css";
+@import "./ui/button.css";
+/*  */
+@import "./all.css";
+@import "./body.css";
+@import "./components/header.css";
+@import "./components/main/main.css";
+@import "./components/footer.css";
+
+:root {
+    --color-blur: rgb(255 255 255 / 86%);
+    /* colors */
+    --gray-100: #cccccc;
+    --gray-200: #b9b9b9;
+    --gray-300: #979797;
+    --gray-400: #7a7a7a;
+    --gray-500: #646464;
+    --gray-600: #4d4d4d;
+    --gray-700: #414141;
+    --gray-800: #2e2e2e;
+    --gray-900: #252525;
+    /* paddings */
+    --default-pd: 8px;
+    /* Gaps */
+    --mini-gap: 4px;
+    --default-gap: 8px;
+    --huge-gap: 12px;
+    /* fonts */
+    --default-font-color: var(--gray-900);
+}
+
+.btn {
+    /* padding */
+    --btn-pd:8px 10px;
+    /* Green */
+    --b-c-fill-green: #00ff37;
+    --b-c-hover-green: #35eb5c;
+    --b-c-clicked-green: #a6ffb9;
+    /* Default color */
+    --b-default-color: var(--gray-100);
+    --b-default-hover: var(--gray-200);
+    --b-default-clicked: rgb(235, 235, 235);
+    /* default sizes */
+    --b-default-ic-size: 20px;
+}

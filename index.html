@@ -8,71 +8,109 @@
 </head>
 <body>
 
-    <header>
+    <header class="web-header">
         <!-- LOGO -->
-        <span class=""></span>
-        <!-- Navigasi -->
-         <nav>
-            <a href="#">Home</a>
-            <a href="#">Our Profile</a>
-            <a href="#">Portofolio</a>
-            <a href="#">Message Us</a>
-         </nav>
+        <span class="logo"></span>
+        <div class="row">
+            <a href="https://maps.google.com/?cid=6920603807750343912" class="btn btn-icon ic-map" target="_blank"></a>
+            <a href="https://www.tokopedia.com/bomarshouse" class="btn btn-icon ic-cart" target="_blank"></a>
+        </div>
     </header>
 
-    <main>
-        <!-- Home Section -->
-        <section id="" class="">
-            <header>
-                <h2>Home</h2>
-            </header>
-            <!-- Banner img -->
-            <div class=""></div>
-            <!-- content -->
-            <article class="">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis in aspernatur odit exercitationem maiores nihil optio, repellat est odio ea!</p>
-            </article>
-        </section>
+    <main class="web-main">
 
-        <!-- Our Peofile Section -->
-        <section id="">
-            <header>
-                <h2>Our Profile</h2>
+        <aside id="sidebar" class="sidebar">
+            <header class="sb-header">
+                <span class="logo"></span>
+                <!-- For Android view -->
+                <button is="side-button" class="btn btn-icon" type="button">
+                    <span></span>
+                </button>
             </header>
-            <!-- content -->
-            <article class="">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis in aspernatur odit exercitationem maiores nihil optio, repellat est odio ea!</p>
-            </article>
-        </section id="">
+            <!-- Navigations -->
+            <nav class="sb-nav">
+                <a is="nav-link" class="btn no-selection active">
+                    <span slot="key">home</span>
+                    Home
+                </a>
+                <a is="nav-link" class="btn no-selection">
+                    <span slot="key">products</span>
+                    Products
+                </a>
+                <a is="nav-link" class="btn no-selection">
+                    <span slot="key">about</span>
+                    About Us
+                </a>
+                <a is="nav-link" class="btn no-selection">
+                    <span slot="key">contact</span>
+                    Contact Us
+                </a>
+             </nav>
+             <div class="sb-footer">
+                <h3>Follow Us</h3>
+                <div class="row">
+                    <a href="https://www.facebook.com/bomarfood" class="btn btn-icon ic-fb" target="_blank"></a>
+                    <a href="https://www.instagram.com/bomarfood" class="btn btn-icon ic-ig" target="_blank"></a>
+                    <a href="https://www.linkedin.com/company/pt-bogatama-marinusa/" class="btn btn-icon ic-ln" target="_blank"></a>
+                </div>
+             </div>
+        </aside>
 
-        <!-- Portofolio Section -->
-        <section id="" class="">
-            <header>
-                <h2>Portofolio</h2>
-            </header>
-            <!-- content -->
-            <article class="">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis in aspernatur odit exercitationem maiores nihil optio, repellat est odio ea!</p>
-            </article>
-        </section>
+        <div class="container">
 
-        <!-- Message Us Section -->
-        <section id="" class="">
-            <header>
-                <h2>Message Us</h2>
-            </header>
-            <!-- Form -->
-             <form action="#">
+            <!-- Home Section -->
+            <section id="home" class="active" name="controlled-section">
+                <header>
+                    <h2>Home</h2>
+                </header>
+                <!-- Banner img -->
+                <div class=""></div>
+                <!-- content -->
+                <article class="">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis in aspernatur odit exercitationem maiores nihil optio, repellat est odio ea!</p>
+                </article>
+            </section>
+    
+            <!-- Products Section -->
+            <section id="products" name="controlled-section">
+                <header>
+                    <h2>Our Products</h2>
+                </header>
+                <!-- content -->
+                <article class="">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis in aspernatur odit exercitationem maiores nihil optio, repellat est odio ea!</p>
+                </article>
+            </section>
 
-             </form>
-        </section>
+            <!-- About Us Section -->
+            <section id="about" class="" name="controlled-section">
+                <header>
+                    <h2>About Us</h2>
+                </header>
+                <!-- content -->
+                <article class="">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis in aspernatur odit exercitationem maiores nihil optio, repellat est odio ea!</p>
+                </article>
+            </section>
+
+            <!-- Contact Us Us Section -->
+            <section id="contact" class="" name="controlled-section">
+                <header>
+                    <h2>Contact Us</h2>
+                </header>
+                <!-- Form -->
+                 <form action="#">
+    
+                 </form>
+            </section>
+        </div>
     </main>
 
-    <footer>
+    <footer class="web-footer">
         <!-- copyright -->
-        <span></span>
+        <span class="copy-right"><b>&#9400;2025</b> by LEONARDO PUALINGGI</span>
     </footer>
     
 </body>
-    <script src="./js/script.js" defer></script>
+    <script src="./js/script.js" type="module" defer></script>
 </html>

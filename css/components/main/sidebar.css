@@ -1,0 +1,95 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: var(--default-pd);
+    gap: var(--huge-gap);
+    background-color: white;
+}
+/* Header */
+.sidebar > .sb-header {
+    /* flex-grow: 1; */
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: var(--default-pd);
+}
+.sidebar > .sb-header > .logo {
+    display: inline-block;
+    min-width: 80px;
+    min-height: max-content;
+}
+/* sidebar button */
+.sidebar > .sb-header > button {
+    border: 1px solid var(--gray-400);
+    border-radius: 50%;
+    display: flex;
+}
+.sidebar > .sb-header > button > span {
+    flex: 1;
+    background-image: url("../../../assets/icons/ic_hamburger.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.sidebar.show > .sb-header > button > span {
+    background-image: url("../../../assets/icons/ic_close.png");
+}
+/* Navigation */
+.sidebar > .sb-nav {
+    flex-grow: 10;
+    display: flex;
+    flex-direction: column;
+    gap: var(--default-gap);
+}
+/* Footer */
+.sidebar > .sb-footer {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: var(--default-gap);
+    padding: var(--default-pd);
+    max-height: max-content;
+}
+
+@media only screen and (max-width: 600px) {
+    .sidebar {
+        position: absolute;
+        left: -100%;
+        top: 0;
+        z-index: 1;
+        min-height: 100%;
+        min-width: 50%;
+        transition: left .5s linear 0;
+    }
+    .sidebar:not([class~="show"]) > .sb-header > button {
+        position: absolute;
+        left: calc(200% + 10px);
+        bottom: 10px;
+        z-index: 9999;
+        background-clip: border-box;
+        min-width: 30px;
+        min-height: 30px;
+        padding: calc(var(--default-pd)/1.5);
+    }
+    .sidebar.show { left: 0; }
+    .sidebar::after {
+        position: absolute;
+        display: inline-block;
+        content: "";
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        left: 100%;
+        height: 100%;
+        background-color: var(--color-blur);
+        filter: blur(1px);
+    }
+    .sidebar > .sb-header { display: flex; }
+    /* Footer */
+    .sidebar > .sb-footer {
+        align-items: center;
+        padding: calc(var(--default-pd)*3) var(--default-pd);
+    }
+}

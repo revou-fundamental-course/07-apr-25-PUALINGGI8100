@@ -1,0 +1,26 @@
+@import "./sidebar.css";
+@import "./container.css";
+
+main {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+main > .sidebar {
+    flex: 2.5;
+}
+main > .container { flex: 9.5; }
+
+/* Styles for android screen */
+@media only screen and (max-width: 600px) {
+   
+}
+/* Styles for tablet screen */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    main > .sidebar { flex: 4; }
+    main > .container { flex: 8; }
+}
+/* Styles for Desktops */
+@media only screen and (min-width: 768px) {
+
+}
