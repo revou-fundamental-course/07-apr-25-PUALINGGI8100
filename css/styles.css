@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
 /* UI */
 @import "./ui/icons.css";
 @import "./ui/button.css";
+@import "./ui/card.css";
 /*  */
 @import "./all.css";
 @import "./body.css";
@@ -9,8 +11,9 @@
 @import "./components/footer.css";
 
 :root {
-    --color-blur: rgb(255 255 255 / 86%);
+    --color-blur: rgba(255, 255, 255, 0.623);
     /* colors */
+    --gray-50: #e4e4e4;
     --gray-100: #cccccc;
     --gray-200: #b9b9b9;
     --gray-300: #979797;
@@ -26,8 +29,19 @@
     --mini-gap: 4px;
     --default-gap: 8px;
     --huge-gap: 12px;
+    /* borders */
+    --default-radius: 10px;
     /* fonts */
     --default-font-color: var(--gray-900);
+}
+
+main {
+    --font-cinzel-normal: normal 500 10pt "Cinzel", serif;
+    /* banner */
+    --banner-height: 300px;
+    --banner-height-md: 250px;
+    --banner-height-sm: 200px;
+    --banner-width: 100%;
 }
 
 .btn {
@@ -38,9 +52,13 @@
     --b-c-hover-green: #35eb5c;
     --b-c-clicked-green: #a6ffb9;
     /* Default color */
-    --b-default-color: var(--gray-100);
-    --b-default-hover: var(--gray-200);
+    --b-default-color: var(--gray-50);
+    --b-default-hover: var(--gray-100);
     --b-default-clicked: rgb(235, 235, 235);
     /* default sizes */
     --b-default-ic-size: 20px;
+}
+
+.card {
+    --card-title-fz: 16pt;
 }

@@ -1,13 +1,25 @@
 .btn {
     text-decoration: unset;
-    border: 1px solid var(--gray-400);
+    border: 1px solid var(--gray-300);
     border-radius: 10px;
     padding: var(--btn-pd);
     color: var(--default-font-color);
     background-color: var(--b-default-color);
 }
+.btn.outline {
+    border: 2px solid var(--gray-300);
+    background-color: unset;
+}
+.btn.with-icon {
+    display: flex;
+    gap: var(--default-gap);
+    align-items: center;
+}
 .btn.active{
     background-color: var(--b-c-fill-green);
+}
+.btn:active {
+    background-color: var(--b-default-clicked);
 }
 .btn.active:hover{
     background-color: var(--b-c-hover-green);
@@ -16,9 +28,6 @@
 .btn:hover {
     background-color: var(--b-default-hover);
     cursor: pointer;
-}
-.btn:active {
-    background-color: var(--b-default-clicked);
 }
 .btn.btn-icon {
     border-radius: 50%;

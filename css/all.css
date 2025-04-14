@@ -1,5 +1,7 @@
-html, body, header, main, footer, div, span, nav, section, aside, h1,h2,h3,h4,h5,h6,p {
+* {
     box-sizing: border-box;
+}
+html, body, header, main, footer, div, span, nav, section, aside, h1,h2,h3,h4,h5,h6,p {
     margin: 0;
 }
 
@@ -15,6 +17,12 @@ span[slot] { display: none !important; }
 .row {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--default-gap);
+}
+.col {
+    display: flex;
+    flex-direction: column;
     gap: var(--default-gap);
 }
 

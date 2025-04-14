@@ -1,0 +1,56 @@
+.home-banner {
+    display: flex;
+    overflow: hidden;
+}
+
+.home-banner > .banner-slide {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    animation: slide-anim 12s linear .5s infinite;
+}
+
+.home-banner > .banner-slide > img {
+    max-width: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    object-position: left;
+    justify-content: center;
+}
+
+.home-banner > .banner-front {
+    position: absolute;
+    left: 0;
+    background-color: var(--color-blur);
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    padding: calc(var(--default-pd) * 5);
+    gap: var(--huge-gap);
+    min-width: 50%;
+    height: 100%;
+    justify-content: end;
+}
+.home-banner > .banner-front > img {
+    max-width: 150px;
+    max-height: 80px;
+    transform: rotate(-2deg);
+}
+.home-banner > .banner-front > figcaption {
+    margin-bottom: 10px;
+    font: var(--font-cinzel-normal);
+    font-size: 1.6rem;
+    font-optical-sizing: auto;
+}
+
+@keyframes slide-anim {
+    from { left: 0; }
+    to { left: -400%; }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .home-banner > .banner-slide > img {
+        object-fit: scale-down;
+    }
+}
