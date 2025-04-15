@@ -1,0 +1,36 @@
+@import "./form.css";
+@import "./modal.css";
+
+
+#contact {
+    min-height: 100%;
+    gap: unset;
+    overflow: hidden;
+    margin: 0;
+}
+#contact > .form-container {
+    flex: 1;
+    gap: unset;
+}
+
+@media only screen and (max-width: 768px) {
+    #contact > .form-container {
+        flex-direction: column;
+    }
+}
+@media only screen and (min-width: 768px) {
+    #contact {
+        justify-content: center;
+        align-items: center;
+    }
+    #contact > .form-container {
+        min-width: 80%;    
+        max-width: 80%;    
+    }
+}
+@media only screen and (min-width: 1200px) {
+    #contact > .form-container {
+        min-width: 50%;    
+        max-width: 80%;    
+    }
+}

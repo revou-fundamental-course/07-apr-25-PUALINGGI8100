@@ -32,7 +32,7 @@
             </header>
             <!-- Navigations -->
             <nav class="sb-nav">
-                <a is="nav-link" class="btn no-selection with-icon active">
+                <a is="nav-link" class="btn no-selection with-icon">
                     <span slot="key">home</span>
                     <span class="material-icons">home</span>
                     Home
@@ -51,7 +51,7 @@
                     </span>
                     About Us
                 </a>
-                <a is="nav-link" class="btn with-icon no-selection">
+                <a is="nav-link" class="btn with-icon no-selection active">
                     <span slot="key">contact</span>
                     <span class="material-icons">
                         support_agent
@@ -72,7 +72,7 @@
         <div class="container">
 
             <!-- Home Section -->
-            <section id="home" class="active" name="controlled-section">
+            <section id="home" class="" name="controlled-section">
                 <!-- Banner imgs & Welcome Speech -->
                 <article class="home-banner">
                     <!-- slide -->
@@ -229,14 +229,54 @@
             </section>
 
             <!-- Contact Us Us Section -->
-            <section id="contact" class="" name="controlled-section">
-                <header>
-                    <h2>Contact Us</h2>
-                </header>
+            <section id="contact" class="active" name="controlled-section">
                 <!-- Form -->
-                 <form action="#">
-    
-                 </form>
+                 <div class="row form-container">
+                     <form is="contact-form" id="contact-form" class="contact-form" autocomplete="off">
+                        <fieldset class="col">
+                            <legend>Contact Us</legend>
+                            <div class="col element-wrapper">
+                                <label for="contact-form-nama">
+                                    Nama :
+                                </label>
+                                <input is="custom-input" required type="text" id="contact-form-nama" class="form-input form-input-styled" name="nama" />
+                                <span aria-details="nama error" class="input-error"></span>
+                            </div>
+                            <div class="col element-wrapper">
+                                <label for="contact-form-nama">
+                                    E-mail :
+                                </label>
+                                <input is="custom-input" required type="email" id="contact-form-nama" class="form-input form-input-styled" name="email"/>
+                                <span aria-details="email error" class="input-error"></span>
+                            </div>
+                            <div class="col element-wrapper">
+                                <label for="contact-form-nama">
+                                    Message :
+                                </label>
+                                <textarea required id="contact-form-nama" class="form-input form-input-styled" name="pesan"></textarea>
+                                <span aria-details="pesan error" class="input-error"></span>
+                            </div>
+                            <input type="submit" value="Send" class="btn btn-green" />
+                        </fieldset>
+                     </form>
+                     <dialog is="contact-dialog" class="contact-submit-modal">
+                        <div class="col contact-submit-modal-wrapper">
+                            <hgroup class="row contact-submit-modal-header">
+                                <h2>Contact Us</h2>
+                                <button id="contact-modal-button" class="modal-button btn btn-icon">
+                                    <span class="material-icons">
+                                        close
+                                    </span>
+                                </button>
+                            </hgroup>
+                            <div class="col contact-submit-modal-content">
+                                <p id="contact-nama-holder"></p>
+                                <p id="contact-email-holder"></p>
+                                <p id="contact-pesan-holder"></p>
+                            </div>
+                        </div>
+                     </dialog>
+                 </div>
             </section>
         </div>
     </main>

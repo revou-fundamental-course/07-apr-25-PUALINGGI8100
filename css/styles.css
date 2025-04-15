@@ -3,6 +3,7 @@
 @import "./ui/icons.css";
 @import "./ui/button.css";
 @import "./ui/card.css";
+@import "./ui/input.css";
 /*  */
 @import "./all.css";
 @import "./body.css";
@@ -23,6 +24,20 @@
     --gray-700: #414141;
     --gray-800: #2e2e2e;
     --gray-900: #252525;
+    /* cyan */
+    --cyan-50: rgb(202, 253, 253);
+    --cyan-100: rgb(175, 248, 248);
+    --cyan-200: rgb(162, 247, 247);
+    --cyan-300: rgb(147, 248, 248);
+    --cyan-400: rgb(131, 255, 255);
+    --cyan-500: rgb(120, 255, 255);
+    /* greens */
+    --green-50: #d3ffdd;
+    --green-100: #bcfccb;
+    --green-200: #9cf7b1;
+    --green-300: #80f59b;
+    --green-400: #7bff9a;
+    --green-500: #70fc90;
     /* paddings */
     --default-pd: 8px;
     /* Gaps */
@@ -33,6 +48,12 @@
     --default-radius: 10px;
     /* fonts */
     --default-font-color: var(--gray-900);
+    --fz-1: 20pt;
+    --fz-2: 18pt;
+    --fz-3: 16pt;
+    --fz-4: 14pt;
+    --fz-5: 12pt;
+    --fz-6: 10pt;
 }
 
 main {

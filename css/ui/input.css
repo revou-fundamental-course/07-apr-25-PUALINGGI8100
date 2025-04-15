@@ -1,0 +1,19 @@
+.form-input-styled {
+    display: relative;
+    outline: 2px solid var(--gray-100) !important;
+    border-radius: var(--default-radius);
+    border: unset;
+}
+.form-input-styled:valid {
+    outline: 2px solid var(--green-500) !important;
+}
+.form-input-styled:focus {
+    outline-color: var(--cyan-500) !important;
+}
+.form-input-styled:invalid {
+    outline-color: red !important;
+}
+
+.form-input-styled:invalid ~ .input-error {
+    color: red;
+}
