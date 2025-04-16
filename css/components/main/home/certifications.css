@@ -1,0 +1,28 @@
+#home-certification > .row {
+    justify-content: center;
+    gap: calc(var(--huge-gap) * 2);
+}
+#home-certification > .row > figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: calc(var(--huge-gap) * 2);
+    margin: 0;
+}
+#home-certification > .row > figure img {
+    flex-grow: 1;
+    max-width: 80px;
+}
+
+@media only screen and (max-width: 768px) {
+    #home-certification > .row > figure img {
+        max-width: 50px;
+    }
+    #home-certification > .row > figure > figcaption {
+        font-size: small;
+        text-align: center;
+    }
+    #home-certification > .row {
+        flex-wrap: unset;
+    }
+}

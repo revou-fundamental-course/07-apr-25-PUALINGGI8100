@@ -1,0 +1,35 @@
+@import "./banner.css";
+@import "./history.css";
+@import "./group.css";
+@import "./certifications.css";
+
+#home {
+    gap: calc(var(--huge-gap) * 5);
+}
+#home > header {
+    padding: var(--default-pd) 0;
+    /* justify-content: flex-end; */
+}
+#home > article {
+    position: relative;
+}
+#home > article.home-banner {
+    min-width: var(--banner-width);
+    min-height: var(--banner-height);
+    max-width: var(--banner-width);
+    max-height: var(--banner-height);
+}
+
+@media only screen and (max-width: 600px) {
+    #home > article.home-banner {
+        min-height: var(--banner-height-sm);
+        max-height: var(--banner-height-sm);
+    }    
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    #home > article.home-banner {
+        min-height: var(--banner-height-md);
+        max-height: var(--banner-height-md);
+    }    
+}

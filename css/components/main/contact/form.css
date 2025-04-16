@@ -1,0 +1,72 @@
+form#contact-form {
+    flex: 1;
+    /* background-color: red; */
+    padding: 0 calc(var(--default-pd) * 3);
+    min-width: 100%;
+    min-height: 100%;
+    margin: 0;
+}
+
+form#contact-form > fieldset {
+    border: 1px solid var(--gray-500);
+    border-radius: var(--default-radius);
+    padding: calc(var(--default-pd) * 3);
+    gap: calc(var(--huge-gap) * 2);
+    flex: 1;
+    display: flex;
+}
+
+form#contact-form > fieldset > legend {
+    font: var( --font-cinzel-normal);
+    font-size: calc(var(--fz-1) * 1.8);
+    padding: 0 calc(var(--default-pd) * 3);
+}
+
+form#contact-form > fieldset > button {
+    max-width: max-content;
+    font-size: var(--fz-5);
+    justify-self: flex-end;
+    align-self: flex-end;
+}
+
+form#contact-form > fieldset > .element-wrapper {
+    position: relative;
+}
+form#contact-form > fieldset > .element-wrapper > label {
+    position: absolute;
+    font-size: var(--fz-4);
+    left: calc(var(--default-pd) * 1.5);
+    top: calc((var(--default-pd) - var(--fz-4)));
+    padding: 0 calc(var(--default-pd) * 1.5);
+    background-color: white;
+}
+form#contact-form > fieldset > .element-wrapper > .form-input {
+    font-size: var(--fz-5);
+    padding: calc((var(--default-pd) + var(--fz-4)));
+    padding-bottom: calc(calc((var(--default-pd) + var(--fz-4))) / 2) !important;
+}
+form#contact-form > fieldset > .element-wrapper > textarea {
+    min-height: 200px;
+    resize: vertical;
+}
+
+@media only screen and (max-width: 768px) {
+    form#contact-form {
+        display: flex;
+        padding: unset;
+        align-items: center;
+    }
+    form#contact-form > fieldset > legend {
+        font-size: var(--fz-1);
+    }
+}
+@media only screen and (min-width: 768px) {
+    form#contact-form > fieldset > legend {
+        font-size: calc(var(--fz-1) * 1.3);
+    }
+}
+@media only screen and (min-width: 1280px) {
+    form#contact-form > fieldset > legend {
+        font-size: calc(var(--fz-1) * 1.8);
+    }
+}

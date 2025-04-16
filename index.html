@@ -4,75 +4,387 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>07-APR-25-PUALINGGI8100</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
 
-    <header>
+    <header class="web-header">
         <!-- LOGO -->
-        <span class=""></span>
-        <!-- Navigasi -->
-         <nav>
-            <a href="#">Home</a>
-            <a href="#">Our Profile</a>
-            <a href="#">Portofolio</a>
-            <a href="#">Message Us</a>
-         </nav>
+        <span class="logo"></span>
+        <div class="row">
+            <a href="https://maps.google.com/?cid=6920603807750343912" class="btn btn-icon ic-map" target="_blank"></a>
+            <a href="https://www.tokopedia.com/bomarshouse" class="btn btn-icon ic-cart" target="_blank"></a>
+        </div>
     </header>
 
-    <main>
-        <!-- Home Section -->
-        <section id="" class="">
-            <header>
-                <h2>Home</h2>
-            </header>
-            <!-- Banner img -->
-            <div class=""></div>
-            <!-- content -->
-            <article class="">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis in aspernatur odit exercitationem maiores nihil optio, repellat est odio ea!</p>
-            </article>
-        </section>
+    <main class="web-main">
 
-        <!-- Our Peofile Section -->
-        <section id="">
-            <header>
-                <h2>Our Profile</h2>
+        <aside id="sidebar" class="sidebar">
+            <header class="sb-header">
+                <span class="logo"></span>
+                <!-- For Android view -->
+                <button is="side-button" class="btn btn-icon" type="button">
+                    <span></span>
+                </button>
             </header>
-            <!-- content -->
-            <article class="">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis in aspernatur odit exercitationem maiores nihil optio, repellat est odio ea!</p>
-            </article>
-        </section id="">
+            <!-- Navigations -->
+            <nav class="sb-nav">
+                <a is="nav-link" class="btn no-selection with-icon active">
+                    <span slot="key">home</span>
+                    <span class="material-icons">home</span>
+                    Home
+                </a>
+                <!-- <a is="nav-link" class="btn with-icon no-selection">
+                    <span slot="key">products</span>
+                    <span class="material-icons">
+                        inventory
+                    </span>
+                    Products
+                </a> -->
+                <a is="nav-link" class="btn with-icon no-selection">
+                    <span slot="key">about</span>
+                    <span class="material-icons">
+                        help
+                    </span>
+                    About Us
+                </a>
+                <a is="nav-link" class="btn with-icon no-selection">
+                    <span slot="key">contact</span>
+                    <span class="material-icons">
+                        support_agent
+                    </span>
+                    Contact Us
+                </a>
+             </nav>
+             <div class="sb-footer">
+                <h3>Follow Us</h3>
+                <div class="row">
+                    <a href="https://www.facebook.com/bomarfood" class="btn btn-icon ic-fb" target="_blank"></a>
+                    <a href="https://www.instagram.com/bomarfood" class="btn btn-icon ic-ig" target="_blank"></a>
+                    <a href="https://www.linkedin.com/company/pt-bogatama-marinusa/" class="btn btn-icon ic-ln" target="_blank"></a>
+                </div>
+             </div>
+        </aside>
 
-        <!-- Portofolio Section -->
-        <section id="" class="">
-            <header>
-                <h2>Portofolio</h2>
-            </header>
-            <!-- content -->
-            <article class="">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis in aspernatur odit exercitationem maiores nihil optio, repellat est odio ea!</p>
-            </article>
-        </section>
+        <div class="container">
 
-        <!-- Message Us Section -->
-        <section id="" class="">
-            <header>
-                <h2>Message Us</h2>
-            </header>
-            <!-- Form -->
-             <form action="#">
+            <!-- Home Section -->
+            <section id="home" class="active" name="controlled-section">
+                <!-- Banner imgs & Welcome Speech -->
+                <article class="home-banner">
+                    <!-- slide -->
+                    <div class="banner-slide">
+                        <img src="./assets/imgs/banner/b1.png" alt="logo-banner" />
+                        <img src="./assets/imgs/banner/b2.png" alt="logo-banner" />
+                        <img src="./assets/imgs/banner/b3.png" alt="logo-banner" />
+                        <img src="./assets/imgs/banner/b4.png" alt="logo-banner" />
+                        <img src="./assets/imgs/banner/b1.png" alt="logo-banner" />
+                    </div>
+                    <!-- WELCOME SPEECH -->
+                    <figure class="banner-front">
+                        <img src="./assets/imgs/banner/b_logo.png" alt="logo-banner">
+                        <figcaption>Shrimp Is Us</figcaption>
+                    </figure>
+                </article>
+                <!-- History -->
+                <article id="home-history" class="home-history col card styled">
+                    <header>
+                        <h2 class="card-title">OUR HISTORY</h2>
+                        <h6>Providing the Best Since 1986</h6>
+                    </header>
+                    <p class="card-text-content">
+                        Since 1986, our parent company started out as an aquaculture company, producing shrimp to larva to grown up. With over 15 years of experience and professionalism producing shrimp, we moved forward in 2001 with the establishment of BOMAR food factory.
+                    </p>
+                    <p class="card-text-content">
+                        As a part of our commitment, over the recent years we have expanded our ventures to serve our customers with a better quality of shrimp products. With our recent establishments on food coating industry and shrimp hatchery, we are constantly looking for innovations and new ways to satisfy the demand
+                    </p>
+                </article>
+                <!-- Group -->
+                <article id="home-group" class="home-group col card styled">
+                    <header>
+                        <h2 class="card-title">OUR GROUP</h2>
+                        <h6>OUR AFFILIATED COMPANIES AS AN INTEGRATED INDUSTRY</h6>
+                    </header>
+                    <div class="row main-container">
+                        <figure class="img-container">
+                            <img src="./assets/imgs/groups/img_group.png" alt="img-company-group">
+                        </figure> 
+                        <div class="col text-container">
+                            <div class="row card">
+                                <span class="material-icons">
+                                    business
+                                </span>
+                                <div class="col">
+                                    <h3>PT. BOGATAMA MARINUSA</h3>
+                                    <h5>FOOD PROCESSING PLANT</h5>
+                                </div>
+                            </div>
+                            <div class="row card">
+                                <span class="material-icons">
+                                    business
+                                </span>
+                                <div class="col">
+                                    <h3>PT. BOMAR PANKO ADIRASA</h3>
+                                    <h5>FOOD COATING INDUSTRY</h5>
+                                </div>
+                            </div>
+                            <div class="row card">
+                                <span class="material-icons">
+                                    business
+                                </span>
+                                <div class="col">
+                                    <h3>PT. BOMAR INTERNIAGA SEMESTA</h3>
+                                    <h5>TRADING & RETAIL COMPANY</h5>
+                                </div>
+                            </div>
+                            <div class="row card">
+                                <span class="material-icons">
+                                    business
+                                </span>
+                                <div class="col">
+                                    <h3>PT. BOMAR BIOPOVA AKUAKULTURA</h3>
+                                    <h5>SPF & SPR SHRIMP HATCHERY</h5>
+                                </div>
+                            </div>
+                            <div class="row card">
+                                <span class="material-icons">
+                                    business
+                                </span>
+                                <div class="col">
+                                    <h3>PT. BOMAR TEKNO AKUATIKA</h3>
+                                    <h5>SUPER INTENSIFICATION SHRIMP FARM</h5>
+                                </div>
+                            </div>
+                            <div class="row card">
+                                <span class="material-icons">
+                                    business
+                                </span>
+                                <div class="col">
+                                    <h3>PT. BOMAR ESINDO TIRTASARITAMA</h3>
+                                    <h5>ICE PROCESSING UNIT</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                 <!-- Group -->
+                <article id="home-certification" class="home-certification col card styled">
+                    <header>
+                        <h2 class="card-title">CERTIFICATIONS</h2>
+                        <h6>Our Accreditations</h6>
+                    </header>
+                    <div class="row">
+                        <figure>
+                            <img src="./assets/imgs/cert/img_cert1.png" alt="certfication-1">
+                            <figcaption>
+                                EU Approval No. 463.22.B
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="./assets/imgs/cert/img_cert2.png" alt="certfication-2">
+                            <figcaption>
+                                EU Approval No. 463.22.B
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="./assets/imgs/cert/img_cert3.png" alt="certfication-3">
+                            <figcaption>
+                                EU Approval No. 463.22.B
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="./assets/imgs/cert/img_cert4.png" alt="certfication-4">
+                            <figcaption>
+                                EU Approval No. 463.22.B
+                            </figcaption>
+                        </figure>
+                    </div>
+                </article>
+            </section>
+            
+            <!-- Products Section
+            <section id="products" name="controlled-section">
+                <header>
+                    <h2>Our Products</h2>
+                </header>
+                <article class="">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis in aspernatur odit exercitationem maiores nihil optio, repellat est odio ea!</p>
+                </article>
+            </section> -->
 
-             </form>
-        </section>
+            <!-- About Us Section -->
+            <section id="about" class="" name="controlled-section">
+                <!-- Commitment -->
+                <article id="about-commitment" class="card-styled">
+                    <header>
+                        <h2 class="card-title">Our Commitment</h2>
+                        <h6>Striving Excellence</h6>
+                    </header>
+                    <div class="col about-content-container about-commitment-content-container">
+                        <span class="bg-content"></span>
+                        <div class="col text-container">
+                            <p>
+                                We are committed to promote excellence in quality and reputation as well as safety and satisfaction of consumers by constantly advancing our processing technology and expertise
+                            </p>
+                            <p>
+                                In years ahead, we will continue enhancing the popularity of seafood products through innovations and value creations to excite our consumers and make seafood products as an integral part of their lifestyle
+                            </p>
+                            <p>
+                                We also commit to constantly maintain our supply chain adequacy to meet the evolving seafood demand 
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <!-- Core Values -->
+                <article id="about-values" class="card-styled">
+                    <header>
+                        <h2 class="card-title">Our Core Values</h2>
+                    </header>
+                    <div class="col about-content-container about-values-content-container">
+                        <!-- QUALITY -->
+                        <div class="col card content-card quality-card">
+                            <span class="bg-content"></span>
+                            <div class="col text-container">
+                                <h3>QUALITY</h3>
+                                <p>
+                                    All BOMAR products are a blend of dedication and sincerity of every individual who puts the quality as the first priority in any case
+                                </p>
+                            </div>
+                        </div>
+                        <!-- INNOVATION -->
+                        <div class="col card content-card innovation-card">
+                            <span class="bg-content"></span>
+                            <div class="col text-container">
+                                <h3>INNOVATION</h3>
+                                <p>
+                                    We are committed to continuously sharpen the mastery of technology by exploring and adapting the best and latest technology to be integrated with our expertise
+                                </p>
+                            </div>
+                        </div>
+                        <!-- INTEGRITY -->
+                        <div class="col card content-card integrity-card">
+                            <span class="bg-content"></span>
+                            <div class="col text-container">
+                                <h3>INTEGRITY</h3>
+                                <p>
+                                    We believe in building customer trust, therefore we are committed to ensure sustainable business and keep on producing the highest quality of products 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- Vision & Mission -->
+                <article id="about-values" class="card-styled">
+                    <header>
+                        <h2 class="card-title">VISION & MISSION</h2>
+                    </header>
+                    <div class="col about-content-container about-values-content-container">
+                        <!-- QUALITY -->
+                        <div class="col card content-card quality-card">
+                            <span class="bg-content"></span>
+                            <div class="col text-container">
+                                <h3>VISION</h3>
+                                <p>
+                                    Making Indonesia the center of global shrimp aquaculture and world's leading high quality safe, healthy, and tasty prepared frozen food & seafood producer 
+                                </p>
+                            </div>
+                        </div>
+                        <!-- INNOVATION -->
+                        <div class="col card content-card innovation-card">
+                            <span class="bg-content"></span>
+                            <div class="col text-container">
+                                <h3>MISSION</h3>
+                                <p>
+                                    Build and contribute to the advancement of value-added industry of fisheries, frozen food processing industry, and national economy in general
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Contact Us Us Section -->
+            <section id="contact" class="" name="controlled-section">
+                <div class="row form-container">
+                     <!-- Contact Form -->
+                     <form is="contact-form" id="contact-form" class="contact-form" autocomplete="off">
+                        <fieldset class="col">
+                            <legend>Contact Us</legend>
+                            <div class="col element-wrapper">
+                                <label for="contact-form-nama">
+                                    Nama :
+                                </label>
+                                <input is="custom-input" required type="text" id="contact-form-nama" class="form-input form-input-styled" name="nama" />
+                                <span aria-details="nama error" class="input-error"></span>
+                            </div>
+                            <div class="col element-wrapper">
+                                <label for="contact-form-nama">
+                                    E-mail :
+                                </label>
+                                <input is="custom-input" required type="email" id="contact-form-nama" class="form-input form-input-styled" name="email"/>
+                                <span aria-details="email error" class="input-error"></span>
+                            </div>
+                            <div class="col element-wrapper">
+                                <label for="contact-form-nama">
+                                    Message :
+                                </label>
+                                <textarea required id="contact-form-nama" class="form-input form-input-styled" name="pesan"></textarea>
+                                <span aria-details="pesan error" class="input-error"></span>
+                            </div>
+                            <button type="submit" class="btn with-icon no-selection btn-cyan">
+                                <span class="material-icons">
+                                    send
+                                </span>
+                                Submit
+                            </button>
+                        </fieldset>
+                     </form>
+                     <!-- Contact Dialog -->
+                     <dialog is="contact-dialog" class="contact-submit-modal">
+                        <div class="col contact-submit-modal-wrapper">
+                            <hgroup class="row contact-submit-modal-header">
+                                <h2>Contact Us</h2>
+                                <button id="contact-modal-button" class="modal-button btn btn-icon">
+                                    <span class="material-icons">
+                                        close
+                                    </span>
+                                </button>
+                            </hgroup>
+                            <div class="col contact-submit-modal-content">
+                                <div class="col">
+                                    <span id="contact-nama-holder-describer" role="definition">
+                                        Nama :
+                                    </span>
+                                    <p id="contact-nama-holder" aria-describedby="contact-nama-holder-describer"></p>
+                                </div>
+                                <div class="col">
+                                    <span id="contact-email-holder-describer" role="definition">
+                                        Email :
+                                    </span>
+                                    <p id="contact-email-holder" aria-describedby="contact-email-holder-describer"></p>
+                                </div>
+                                <div class="col">
+                                    <span id="contact-pesan-holder-describer" role="definition">
+                                        Pesan Anda :
+                                    </span>
+                                    <p id="contact-pesan-holder" aria-describedby="contact-pesan-holder-describer"></p>
+                                </div>
+                            </div>
+                        </div>
+                     </dialog>
+                 </div>
+            </section>
+        </div>
     </main>
 
-    <footer>
+    <footer class="web-footer">
         <!-- copyright -->
-        <span></span>
+        <span class="copy-right"><b>&#9400;2025</b> by LEONARDO PUALINGGI</span>
     </footer>
     
 </body>
-    <script src="./js/script.js" defer></script>
+    <script src="./js/script.js" type="module" defer></script>
 </html>

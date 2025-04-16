@@ -1,0 +1,10 @@
+.web-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 var(--default-pd);
+}
+.web-footer .copy-right {
+    font-size: small;
+}

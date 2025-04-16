@@ -1,0 +1,36 @@
+.logo {
+    background-image: url("../../assets/icons/ic_logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ic-map {
+    background-image: url("../../assets/icons/ic_loc.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ic-cart {
+    background-image: url("../../assets/icons/ic_cart.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ic-fb {
+    background-image: url("../../assets/icons/ic_fb.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ic-ig {
+    background-image: url("../../assets/icons/ic_ig.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ic-ln {
+    background-image: url("../../assets/icons/ic_ln.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}

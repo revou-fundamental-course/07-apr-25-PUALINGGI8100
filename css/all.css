@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+html, body, header, main, footer, div, span, nav, section, aside, h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+}
+
+button, select, input, textarea {
+    outline: unset !important;
+}
+
+h1,h2,h3,h4,h5,h6,p {  color: var(--default-font-color); }
+h1, p { padding: 0; line-height: 1.2em; }
+
+span[slot] { display: none !important; }
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--default-gap);
+}
+.col {
+    display: flex;
+    flex-direction: column;
+    gap: var(--default-gap);
+}
+
+.no-selection {
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* Internet Explorer/Edge */
+    user-select: none;         /* Standard syntax */
+}

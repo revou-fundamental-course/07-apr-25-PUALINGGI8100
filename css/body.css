@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    flex-direction: column;
+    padding: var(--default-pd);
+    height: 100vh !important;
+    max-height: 100vh !important;
+}
+body > .web-header {
+    flex-grow: 1;
+}
+body > .web-main {
+    flex-grow: 10;
+}
+body > .web-footer {
+    flex-grow: 1;
+}
+
+/* Android screen <=600px */
+@media only screen and (max-width: 600px) {
+    body { padding: unset; }
+    body > .web-header { display: none; }
+    body > .web-footer { display: none; }
+}

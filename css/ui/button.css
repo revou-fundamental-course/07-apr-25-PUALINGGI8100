@@ -1,0 +1,72 @@
+.btn {
+    text-decoration: unset;
+    border: 1px solid var(--gray-300);
+    border-radius: 10px;
+    padding: var(--btn-pd);
+    color: var(--default-font-color);
+    background-color: var(--b-default-color);
+}
+.btn.outline {
+    border: 2px solid var(--gray-300);
+    background-color: unset;
+}
+.btn.with-icon {
+    display: flex;
+    gap: var(--default-gap);
+    align-items: center;
+}
+.btn.active{
+    background-color: var(--b-c-fill-green);
+}
+.btn:active {
+    background-color: var(--b-default-clicked);
+}
+.btn.active:hover{
+    background-color: var(--b-c-hover-green);
+}
+
+.btn:hover {
+    background-color: var(--b-default-hover);
+    cursor: pointer;
+}
+.btn.btn-icon {
+    border-radius: 50%;
+    padding: calc(var(--default-pd)/2);
+    background-color: unset;
+    border: unset;
+}
+/* variant Green */
+.btn.btn-green {
+    background-color: var(--b-c-fill-green);
+}
+.btn.btn-green:hover {
+    background-color: var(--b-c-hover-green);
+}
+
+/* Styles for android screen */
+@media only screen and (max-width: 600px) {
+    .btn.btn-icon {
+        min-width: var(--b-default-ic-size);
+        min-height: var(--b-default-ic-size);
+    }
+}
+/* Styles for tablet screen */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .btn.btn-icon {
+        min-width: calc(var(--b-default-ic-size)*1.2);
+        min-height: calc(var(--b-default-ic-size)*1.2);
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .btn.btn-icon {
+        min-width: calc(var(--b-default-ic-size)*1.4);
+        min-height: calc(var(--b-default-ic-size)*1.4);
+    }
+}
+/* Styles for Desktops */
+@media only screen and (min-width: 1200px) {
+    .btn.btn-icon {
+        min-width: calc(var(--b-default-ic-size)*1.6);
+        min-height: calc(var(--b-default-ic-size)*1.6);
+    }
+}
