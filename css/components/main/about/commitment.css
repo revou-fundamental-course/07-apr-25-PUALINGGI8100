@@ -1,0 +1,16 @@
+#about-commitment .bg-content {
+    background-image: url("../../../../assets/imgs/about/commitment_bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(8px);
+    -webkit-filter: blur(5px);
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+#about-commitment .about-commitment-content-container .text-container {
+    /* text-shadow: ; */
+    z-index: 1;
+}

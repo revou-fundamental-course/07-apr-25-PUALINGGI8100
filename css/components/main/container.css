@@ -1,5 +1,6 @@
 @import "./home/styles.css";
 @import "./contact/styles.css";
+@import "./about/styles.css";
 
 .container {
     position: relative;

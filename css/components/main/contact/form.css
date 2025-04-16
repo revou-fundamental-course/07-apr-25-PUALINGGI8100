@@ -13,12 +13,20 @@ form#contact-form > fieldset {
     padding: calc(var(--default-pd) * 3);
     gap: calc(var(--huge-gap) * 2);
     flex: 1;
+    display: flex;
 }
 
 form#contact-form > fieldset > legend {
     font: var( --font-cinzel-normal);
     font-size: calc(var(--fz-1) * 1.8);
     padding: 0 calc(var(--default-pd) * 3);
+}
+
+form#contact-form > fieldset > button {
+    max-width: max-content;
+    font-size: var(--fz-5);
+    justify-self: flex-end;
+    align-self: flex-end;
 }
 
 form#contact-form > fieldset > .element-wrapper {
@@ -39,6 +47,7 @@ form#contact-form > fieldset > .element-wrapper > .form-input {
 }
 form#contact-form > fieldset > .element-wrapper > textarea {
     min-height: 200px;
+    resize: vertical;
 }
 
 @media only screen and (max-width: 768px) {

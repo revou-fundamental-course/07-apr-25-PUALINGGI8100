@@ -1,0 +1,39 @@
+@import "./commitment.css";
+@import "./values.css";
+
+#about {
+    padding: var(--default-pd);
+    padding-top: calc(var(--default-pd) * 3);
+    gap: calc(var(--huge-gap) * 3);
+}
+
+#about > article {
+    position: relative;
+    border: 1px solid var(--gray-100);
+    border-radius: var(--default-radius);
+}
+
+#about > article > header {
+    position: absolute;
+    font-size: var(--fz-3);
+    padding: 0 calc(var(--default-pd));
+    top: calc(var(--default-pd) - calc(var(--fz-3) * 1.4));
+    background-color: white;
+}
+#about > article:nth-child(odd) > header {
+    left: calc(var(--default-pd) * 2);
+}
+#about > article:nth-child(even) > header {
+    right: calc(var(--default-pd) * 2);
+}
+#about > article:nth-child(even) div.card {
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: end;
+}
+
+#about > article > .about-content-container {
+    position: relative;
+    padding: calc(var(--default-pd) * 2);
+    margin-top: calc(var(--default-pd) + calc(var(--fz-3) * 1.4)) !important;
+}

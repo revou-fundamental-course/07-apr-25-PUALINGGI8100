@@ -32,18 +32,18 @@
             </header>
             <!-- Navigations -->
             <nav class="sb-nav">
-                <a is="nav-link" class="btn no-selection with-icon">
+                <a is="nav-link" class="btn no-selection with-icon active">
                     <span slot="key">home</span>
                     <span class="material-icons">home</span>
                     Home
                 </a>
-                <a is="nav-link" class="btn with-icon no-selection">
+                <!-- <a is="nav-link" class="btn with-icon no-selection">
                     <span slot="key">products</span>
                     <span class="material-icons">
                         inventory
                     </span>
                     Products
-                </a>
+                </a> -->
                 <a is="nav-link" class="btn with-icon no-selection">
                     <span slot="key">about</span>
                     <span class="material-icons">
@@ -51,7 +51,7 @@
                     </span>
                     About Us
                 </a>
-                <a is="nav-link" class="btn with-icon no-selection active">
+                <a is="nav-link" class="btn with-icon no-selection">
                     <span slot="key">contact</span>
                     <span class="material-icons">
                         support_agent
@@ -72,7 +72,7 @@
         <div class="container">
 
             <!-- Home Section -->
-            <section id="home" class="" name="controlled-section">
+            <section id="home" class="active" name="controlled-section">
                 <!-- Banner imgs & Welcome Speech -->
                 <article class="home-banner">
                     <!-- slide -->
@@ -170,7 +170,6 @@
                         </div>
                     </div>
                 </article>
-                <!-- Cert -->
                  <!-- Group -->
                 <article id="home-certification" class="home-certification col card styled">
                     <header>
@@ -205,33 +204,112 @@
                     </div>
                 </article>
             </section>
-    
-            <!-- Products Section -->
+            
+            <!-- Products Section
             <section id="products" name="controlled-section">
                 <header>
                     <h2>Our Products</h2>
                 </header>
-                <!-- content -->
                 <article class="">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis in aspernatur odit exercitationem maiores nihil optio, repellat est odio ea!</p>
                 </article>
-            </section>
+            </section> -->
 
             <!-- About Us Section -->
             <section id="about" class="" name="controlled-section">
-                <header>
-                    <h2>About Us</h2>
-                </header>
-                <!-- content -->
-                <article class="">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis in aspernatur odit exercitationem maiores nihil optio, repellat est odio ea!</p>
+                <!-- Commitment -->
+                <article id="about-commitment" class="card-styled">
+                    <header>
+                        <h2 class="card-title">Our Commitment</h2>
+                        <h6>Striving Excellence</h6>
+                    </header>
+                    <div class="col about-content-container about-commitment-content-container">
+                        <span class="bg-content"></span>
+                        <div class="col text-container">
+                            <p>
+                                We are committed to promote excellence in quality and reputation as well as safety and satisfaction of consumers by constantly advancing our processing technology and expertise
+                            </p>
+                            <p>
+                                In years ahead, we will continue enhancing the popularity of seafood products through innovations and value creations to excite our consumers and make seafood products as an integral part of their lifestyle
+                            </p>
+                            <p>
+                                We also commit to constantly maintain our supply chain adequacy to meet the evolving seafood demand 
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <!-- Core Values -->
+                <article id="about-values" class="card-styled">
+                    <header>
+                        <h2 class="card-title">Our Core Values</h2>
+                    </header>
+                    <div class="col about-content-container about-values-content-container">
+                        <!-- QUALITY -->
+                        <div class="col card content-card quality-card">
+                            <span class="bg-content"></span>
+                            <div class="col text-container">
+                                <h3>QUALITY</h3>
+                                <p>
+                                    All BOMAR products are a blend of dedication and sincerity of every individual who puts the quality as the first priority in any case
+                                </p>
+                            </div>
+                        </div>
+                        <!-- INNOVATION -->
+                        <div class="col card content-card innovation-card">
+                            <span class="bg-content"></span>
+                            <div class="col text-container">
+                                <h3>INNOVATION</h3>
+                                <p>
+                                    We are committed to continuously sharpen the mastery of technology by exploring and adapting the best and latest technology to be integrated with our expertise
+                                </p>
+                            </div>
+                        </div>
+                        <!-- INTEGRITY -->
+                        <div class="col card content-card integrity-card">
+                            <span class="bg-content"></span>
+                            <div class="col text-container">
+                                <h3>INTEGRITY</h3>
+                                <p>
+                                    We believe in building customer trust, therefore we are committed to ensure sustainable business and keep on producing the highest quality of products 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- Vision & Mission -->
+                <article id="about-values" class="card-styled">
+                    <header>
+                        <h2 class="card-title">VISION & MISSION</h2>
+                    </header>
+                    <div class="col about-content-container about-values-content-container">
+                        <!-- QUALITY -->
+                        <div class="col card content-card quality-card">
+                            <span class="bg-content"></span>
+                            <div class="col text-container">
+                                <h3>VISION</h3>
+                                <p>
+                                    Making Indonesia the center of global shrimp aquaculture and world's leading high quality safe, healthy, and tasty prepared frozen food & seafood producer 
+                                </p>
+                            </div>
+                        </div>
+                        <!-- INNOVATION -->
+                        <div class="col card content-card innovation-card">
+                            <span class="bg-content"></span>
+                            <div class="col text-container">
+                                <h3>MISSION</h3>
+                                <p>
+                                    Build and contribute to the advancement of value-added industry of fisheries, frozen food processing industry, and national economy in general
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </article>
             </section>
 
             <!-- Contact Us Us Section -->
-            <section id="contact" class="active" name="controlled-section">
-                <!-- Form -->
-                 <div class="row form-container">
+            <section id="contact" class="" name="controlled-section">
+                <div class="row form-container">
+                     <!-- Contact Form -->
                      <form is="contact-form" id="contact-form" class="contact-form" autocomplete="off">
                         <fieldset class="col">
                             <legend>Contact Us</legend>
@@ -256,9 +334,15 @@
                                 <textarea required id="contact-form-nama" class="form-input form-input-styled" name="pesan"></textarea>
                                 <span aria-details="pesan error" class="input-error"></span>
                             </div>
-                            <input type="submit" value="Send" class="btn btn-green" />
+                            <button type="submit" class="btn with-icon no-selection btn-cyan">
+                                <span class="material-icons">
+                                    send
+                                </span>
+                                Submit
+                            </button>
                         </fieldset>
                      </form>
+                     <!-- Contact Dialog -->
                      <dialog is="contact-dialog" class="contact-submit-modal">
                         <div class="col contact-submit-modal-wrapper">
                             <hgroup class="row contact-submit-modal-header">
@@ -270,9 +354,24 @@
                                 </button>
                             </hgroup>
                             <div class="col contact-submit-modal-content">
-                                <p id="contact-nama-holder"></p>
-                                <p id="contact-email-holder"></p>
-                                <p id="contact-pesan-holder"></p>
+                                <div class="col">
+                                    <span id="contact-nama-holder-describer" role="definition">
+                                        Nama :
+                                    </span>
+                                    <p id="contact-nama-holder" aria-describedby="contact-nama-holder-describer"></p>
+                                </div>
+                                <div class="col">
+                                    <span id="contact-email-holder-describer" role="definition">
+                                        Email :
+                                    </span>
+                                    <p id="contact-email-holder" aria-describedby="contact-email-holder-describer"></p>
+                                </div>
+                                <div class="col">
+                                    <span id="contact-pesan-holder-describer" role="definition">
+                                        Pesan Anda :
+                                    </span>
+                                    <p id="contact-pesan-holder" aria-describedby="contact-pesan-holder-describer"></p>
+                                </div>
                             </div>
                         </div>
                      </dialog>

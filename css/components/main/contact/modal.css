@@ -27,10 +27,19 @@
     flex-grow: none;
     min-width: 100%;
     justify-content: space-between;
+    padding: calc(var(--default-pd) * 2) var(--default-pd);
 }
 .contact-submit-modal > div > .contact-submit-modal-content {
     flex-grow: 1;
     padding: calc(var(--default-pd) * 2);
+    gap: calc(var(--default-pd) * 2);
+}
+.contact-submit-modal > div > .contact-submit-modal-content span[role="definition"] {
+    font-size: var(--fz-1);
+    font-weight: bold;
+}
+.contact-submit-modal > div > .contact-submit-modal-content span[role="definition"] ~ p {
+    font-size: var(--fz-2);
 }
 
 @media only screen and (max-width: 768px) {
@@ -42,11 +51,11 @@
 }
 @media only screen and (min-width: 768px) {
     .contact-submit-modal > .contact-submit-modal-wrapper {
-        max-width: 60%;
+        max-width: 70%;
     }
 }
 @media only screen and (min-width: 1280px) {
     .contact-submit-modal > .contact-submit-modal-wrapper {
-        max-width: 50%;
+        max-width: 60%;
     }
 }
